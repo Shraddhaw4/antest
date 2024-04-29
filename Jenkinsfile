@@ -14,7 +14,7 @@ pipeline {
                 script {
                     dir(BUILD_NUMBER) {
                         echo "User is : ${BUILD_NUMBER}"
-                        sh 'cp /home/jenkins/workspace/antest/test /home/ec2-user/'
+                        sh 'cp /home/jenkins/workspace/antest/test /home/jenkins/workspace/antest/BUILD_NUMBER'
                     }
                 }
             }

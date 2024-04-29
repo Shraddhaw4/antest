@@ -14,6 +14,7 @@ pipeline {
                 script {
                     dir('${BUILD_NUMBER}') {
                         "User is : ${BUILD_NUMBER}"
+                    }
                 }
             }
         }

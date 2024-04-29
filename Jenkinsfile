@@ -12,7 +12,7 @@ pipeline {
         stage ('Check if hosts are rechable') {
             steps {
                 script {
-                    dir('${BUILD_NUMBER}') {
+                    dir(${BUILD_NUMBER}) {
                         echo "User is : ${BUILD_NUMBER}"
                         sh 'cp test /home/ec2-user/test.txt'
                     }

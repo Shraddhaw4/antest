@@ -13,7 +13,6 @@ pipeline {
             steps {
                 script {
                     dir(${BUILD_NUMBER})
-                    sh 'cp inv /home/ec2-user/${BUILD_NUMBER}'
                 }
             }
         }

@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     dir('${BUILD_NUMBER}') {
-                        "User is : ${BUILD_NUMBER}"
+                        echo "User is : ${BUILD_NUMBER}"
                     }
                 }
             }

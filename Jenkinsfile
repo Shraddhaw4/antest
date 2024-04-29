@@ -12,7 +12,8 @@ pipeline {
         stage ('Check if hosts are rechable') {
             steps {
                 script {
-                    dir('${BUILD_NUMBER}')
+                    dir('${BUILD_NUMBER}') {
+                        "User is : ${BUILD_NUMBER}"
                 }
             }
         }

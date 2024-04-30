@@ -9,14 +9,9 @@ pipeline {
             }
         }
 
-        stage ('Check if hosts are rechable') {
+        stage ('Create hosts file') {
             steps {
-                script {
-                    dir(BUILD_NUMBER) {
-                        echo "User is : ${BUILD_NUMBER}"
-                        sh 'cp /home/jenkins/workspace/antest/test /home/jenkins/workspace/${JOB_NAME}/${BUILD_NUMBER}/'
-                    }
-                }
+                sh 'touch hosts'
             }
         }
     }
